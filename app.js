@@ -1,4 +1,3 @@
-// Orquestación de vistas, sesión y API. Los tres procesos están en public/js/.
 import { money, esc } from './js/comun.js';
 import { normalizarCarrito, contarUnidades, agregarProducto, cambiarCantidad, quitarProducto, vistaCatalogo, vistaCarrito, productCard } from './js/carrito.js';
 import { vistaDetalle } from './js/detalleCarrito.js';

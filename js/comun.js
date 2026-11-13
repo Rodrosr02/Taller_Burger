@@ -1,4 +1,3 @@
-// Utilidades compartidas: formato, escape HTML y navegación de los tres procesos.
 export const money = value => new Intl.NumberFormat('es-CO', {
   style: 'currency', currency: 'COP', maximumFractionDigits: 0,
 }).format(value);

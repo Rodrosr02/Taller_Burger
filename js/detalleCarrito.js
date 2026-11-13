@@ -1,4 +1,3 @@
-// PROCESO 2 — Integrante 2: detalle, cantidades, eliminación y resumen de compra.
 import { money, esc, pasos } from './comun.js';
 import { contarUnidades } from './carrito.js';
 export function calcularTotales(items, products, fulfillment, deliveryFee) {

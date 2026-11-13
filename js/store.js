@@ -1,17 +1,3 @@
-// "Backend" local: reemplaza al servidor Node + SQLite usando únicamente localStorage.
-// Expone api(path, method, body) con el mismo contrato que usaba app.js, así las vistas no cambian.
-//
-// Claves de localStorage:
-//   burger_users     → usuarios y perfiles (admin | seller | customer)
-//   burger_products  → menú / catálogo
-//   burger_orders    → pedidos
-//   burger_session   → { userId, expires } de la sesión activa
-//   burger_v2_cart_* → carritos (los maneja app.js, uno por cuenta)
-//
-// AVISO: todo vive en el navegador. Los permisos aquí validan la interfaz y evitan errores,
-// pero cualquiera con las herramientas de desarrollador puede editar el localStorage.
-// Es adecuado para un proyecto académico o una demostración, no para producción.
-
 const KEYS = { users: 'burger_users', products: 'burger_products', orders: 'burger_orders', session: 'burger_session' };
 const SHIPPING_FEE = 5000;
 const SESSION_MS = 24 * 60 * 60 * 1000;

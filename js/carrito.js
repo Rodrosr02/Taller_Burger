@@ -1,7 +1,4 @@
 import { money, esc, pasos } from './comun.js';
-// PROCESO 1 — Integrante 1: catálogo, carrito y reto del contador.
-// El contador representa UNIDADES: dos productos distintos con cantidades 2 y 3 suman 5.
-// Estas funciones no modifican el arreglo recibido; app.js persiste y actualiza la vista.
 export function normalizarCarrito(value) {
   if (!Array.isArray(value)) return [];
   const items = new Map();
